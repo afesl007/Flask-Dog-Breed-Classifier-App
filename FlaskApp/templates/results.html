@@ -1,0 +1,10 @@
+<h1>Dog Breed Classifier. Here is the prediction</h1>
+<a href="{{ url_for('index') }}">Back</a><p>
+
+<h2>{{ message }}</h2>
+
+<ul>
+{% for file_url in file_urls %}
+    <li><img style="height: 150px" src="{{ file_url }}"></li>
+{% endfor %}
+</ul>
